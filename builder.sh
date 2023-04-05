@@ -75,8 +75,8 @@ main(){
     setProfile
 }
 
-if [ -n "$1" ]; then
-    $1
-else
-    main
-fi
+#if [ -n "$1" ]; then
+#    $1
+#else
+#    main
+#fi
