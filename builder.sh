@@ -5,7 +5,7 @@ RELEASE="$(rpm -E %fedora)"
 ARCH="${ARCH:-x86_64}"
 
 addCoprs(){
-    curl ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
+    ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
 }
 
 #removePkgs(){
