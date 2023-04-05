@@ -4,9 +4,9 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 ARCH="${ARCH:-x86_64}"
 
-addCoprs(){
+#addCoprs(){
     ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
-}
+#}
 
 #removePkgs(){
 #    rpm-ostree remove -y \
@@ -15,7 +15,7 @@ addCoprs(){
 #    rpm-ostree override remove -y \
 #}
 
-installPkgs(){
+#installPkgs(){
     rpm-ostree install -y  \
     xorg-x11-server-Xwayland \
     gamescope \
@@ -33,9 +33,9 @@ installPkgs(){
     wofi \
     hyprland \
     sddm
-}
+#}
 
-addFlatpakRemotes(){
+#addFlatpakRemotes(){
     # fedora oci
     printf "adding fedora oci to flatpak if it does not exists\n"
     flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
@@ -63,9 +63,9 @@ addFlatpakRemotes(){
     # update appstream
     printf "updating flatpak appstream\n"
     flatpak update --appstream
-}
+#}
 
-setProfile(){
+#setProfile(){
     printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
     printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
     printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile
@@ -73,18 +73,18 @@ setProfile(){
     printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile
     printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile
     printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile
-}
+#}
 
-main(){
-    # coprs   
-    addCoprs
-    #
-    addFlatpakRemotes
-    #
-    installPkgs
-    #
-    setProfile
-}
+#main(){
+#    # coprs   
+#    addCoprs
+#    #
+#    addFlatpakRemotes
+#    #
+#    installPkgs
+#    #
+#    setProfile
+#}
 
 #if [ -n "$1" ]; then
 #    $1
