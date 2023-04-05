@@ -1,7 +1,8 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
 
-RUN ./builder.sh
+COPY ./builder.sh /tmp/builder.sh
+RUN /tmp/builder.sh
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
