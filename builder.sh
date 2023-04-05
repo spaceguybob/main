@@ -2,23 +2,21 @@
 set -ouex pipefail
 
 # install packages
-rpm-ostree install -y  \
-    xorg-x11-server-Xwayland \
-    gamescope \
-    xdg-desktop-portal \
-    polkit-gnome \
-    mako \ 
-    python3 \
-    python3-pip \
-    waybar \ 
-    kitty \
-    wlsunset \ 
-    swaylock \
-    swayidle \
-    swaybg \
-    wofi \
-    sddm \
-    hyprland
+rpm-ostree install -y xorg-x11-server-Xwayland
+rpm-ostree install -y gamescope
+rpm-ostree install -y xdg-desktop-portal
+rpm-ostree install -y polkit-gnome
+rpm-ostree install -y mako
+rpm-ostree install -y waybar 
+rpm-ostree install -y kitty
+rpm-ostree install -y wlsunset
+rpm-ostree install -y swaylock
+rpm-ostree install -y swayidle
+rpm-ostree install -y swaybg
+rpm-ostree install -y wofi
+rpm-ostree install -y sddm
+    
+rpm-ostree install -y  hyprland
     
 
 # fedora oci
