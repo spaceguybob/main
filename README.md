@@ -4,5 +4,5 @@ a custom fedora silverblue OCI image based on ublue-os with the hyprland wayland
 
 ### Install via Rebase
 ```
-$ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:38
+$ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:v38.0.0
 ```
