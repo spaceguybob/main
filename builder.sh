@@ -8,9 +8,12 @@ addCoprs(){
     curl ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
 }
 
-removePkgs(){
-
-}
+#removePkgs(){
+#    rpm-ostree remove -y \
+#}
+#overrideRemovePkgs(){
+#    rpm-ostree override remove -y \
+#}
 
 installPkgs(){
     rpm-ostree install -y  \
@@ -53,6 +56,10 @@ addFlatpakRemotes(){
     printf "adding gnome-nightly to flatpak if it does not exists\n"
     flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 
+    # elemenetoryos-appcenter
+    printf "adding elemenetoryos-appcenter to flatpak if it does not exists\n"
+    flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
+    
     # update appstream
     printf "updating flatpak appstream\n"
     flatpak update --appstream
