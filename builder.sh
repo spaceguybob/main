@@ -15,7 +15,6 @@ rpm-ostree install -y swayidle
 rpm-ostree install -y swaybg
 rpm-ostree install -y wofi
 rpm-ostree install -y sddm
-    
 rpm-ostree install -y  hyprland
     
 
@@ -43,10 +42,6 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 printf "adding elemenetoryos-appcenter to flatpak if it does not exists\n"
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
     
-# update appstream
-printf "updating flatpak appstream\n"
-flatpak update --appstream
-
 # set profile
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
