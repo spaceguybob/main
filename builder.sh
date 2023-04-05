@@ -8,6 +8,10 @@ addCoprs(){
     curl ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
 }
 
+removePkgs(){
+
+}
+
 installPkgs(){
     rpm-ostree install -y  \
     xorg-x11-server-Xwayland \
