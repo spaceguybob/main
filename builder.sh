@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
-FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
+#FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 
 #RELEASE="$(rpm -E %fedora)"
 ARCH="${ARCH:-x86_64}"
 
-curl https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-${FEDORA_MAJOR_VERSION}/solopasha-hyprland-fedora-${FEDORA_MAJOR_VERSION}.repo | tee /etc/yum.repos.d/copr-solopasha-hyprland.repo
+curl https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-38/solopasha-hyprland-fedora-38.repo | tee /etc/yum.repos.d/copr-solopasha-hyprland.repo
 
 # install packages
 rpm-ostree install -y  \
