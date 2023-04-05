@@ -5,8 +5,11 @@ RELEASE="$(rpm -E %fedora)"
 ARCH="${ARCH:-x86_64}"
 
 #addCoprs(){
-    ostree remote add copr-solopasha-hyprland https://download.copr.fedorainfracloud.org/results/solopasha/hyprland/fedora-${RELEASE}-${ARCH}/
-#}
+
+COPRR1="https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-${RELEASE}/solopasha-hyprland-fedora-${RELEASE}.repo"
+COPRR1N=copr-solopasha-hyprland
+curl ${COPRR1} | tee /etc/yum.repos.d/${COPRR1N}.repo
+rpm-ostree refresh-md
 
 #removePkgs(){
 #    rpm-ostree remove -y \
