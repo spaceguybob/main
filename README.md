@@ -1,14 +1,18 @@
 # hyprgreen
-a custom experimental fedora silverblue OCI image based on ublue-os with the hyprland wayland compositor
+a custom experimental [fedora silverblue/kinote](https://silverblue.fedoraproject.org/) OCI image based on [ublue-os]((https://github.com/ublue-os/)) with the [hyprland](https://hyprland.org/) wayland compositor.
 
 [![Build](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/vibrantleaf/hyprgreen?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/vibrantleaf/hyprgreen?color=teal&label=Commit%20Activity&logo=github)
 
 # Table of Contents
-1. [Install via Rebase](#install-via-rebase)
+1. [Why?](#why)
+2. [Install via Rebase](#install-via-rebase)
   - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
+
+### Why?
+Why not? i like [Fedora linux](https://fedoraproject.org/), [Immutabile Operating Systems](https://www.redhat.com/sysadmin/immutability-silverblue), [hyprland](https://hyprland.org/) and Fedora silverblue/kinote now allows booting from a OCI image, Why not make a custom OCI Image to Rebase too to have hyprland presetup already?
 
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag
