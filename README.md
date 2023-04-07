@@ -12,7 +12,7 @@ a custom experimental [fedora silverblue/kinote](https://silverblue.fedoraprojec
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 
 ### Why?
-Why not? i like [Fedora linux](https://fedoraproject.org/), [Immutabile OSs](https://www.redhat.com/sysadmin/immutability-silverblue), [hyprland](https://hyprland.org/) and Fedora silverblue/kinote now allows booting from a OCI image, Why not make a custom OCI Image to Rebase too to have hyprland presetup already?
+Why not?
 
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag
