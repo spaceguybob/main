@@ -1,6 +1,8 @@
 # hyprgreen
 a custom experimental fedora silverblue OCI image based on ublue-os with the hyprland wayland compositor
 
+[![Build](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/vibrantleaf/hyprgreen?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/vibrantleaf/hyprgreen?color=teal&label=Commit%20Activity&logo=github)
+
 # Table of Contents
 1. [Install via Rebase](#install-via-rebase)
   - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag)
