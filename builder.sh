@@ -9,13 +9,17 @@ rpm-ostree install -y polkit-gnome
 rpm-ostree install -y mako
 rpm-ostree install -y waybar 
 rpm-ostree install -y kitty
-rpm-ostree install -y wlsunset
+rpm-ostree install -y swaybg
 rpm-ostree install -y swaylock
 rpm-ostree install -y swayidle
-rpm-ostree install -y swaybg
+rpm-ostree install -y eom
+rpm-ostree install -y wtype
+rpm-ostree install -y wlogout
+rpm-ostree install -y wlr-randr
+rpm-ostree install -y wlsunset
 rpm-ostree install -y wofi
 rpm-ostree install -y sddm
-rpm-ostree install -y  hyprland
+rpm-ostree install -y hyprland
     
 
 # fedora oci
