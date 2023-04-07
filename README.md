@@ -1,5 +1,5 @@
 # hyprgreen
-a custom fedora silverblue OCI image based on ublue-os with the hyprland wayland compositor
+a custom experimental fedora silverblue OCI image based on ublue-os with the hyprland wayland compositor
 
 # Table of Contents
 1. [Install via Rebase](#install-via-rebase)
