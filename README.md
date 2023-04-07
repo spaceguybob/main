@@ -1,6 +1,13 @@
 # hyprgreen
 a custom fedora silverblue OCI image based on ublue-os with the hyprland wayland compositor
 
+# Table of Contents
+1. [Install via Rebase](#install-via-rebase)
+  - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag)
+  - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
+  - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
+  - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
+
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag
 [see](https://github.com/vibrantleaf/hyprgreen/releases/latest)
