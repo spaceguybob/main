@@ -1,5 +1,5 @@
 # hyprgreen
-a custom experimental [fedora silverblue/kinote](https://silverblue.fedoraproject.org/) OCI image based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
+a custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://silverblue.fedoraproject.org/)/[kinote](https://kinoite.fedoraproject.org/) OCI image based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
 
 [![Build](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/vibrantleaf/hyprgreen/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/vibrantleaf/hyprgreen?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/vibrantleaf/hyprgreen?color=teal&label=Commit%20Activity&logo=github)
 
