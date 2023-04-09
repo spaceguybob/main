@@ -21,7 +21,6 @@ Why not?
 Install the latest release of hyprgreen via rebase
 ```sh
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:latest
-Install
 ```
 #### Rebase to a specific hyprgreen tag
 tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
