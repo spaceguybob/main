@@ -40,6 +40,15 @@ Install the 'git' build of hyprgreen (Not Recomended) via rebase
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:main
 ```
 ### Updating
+For latest,nightly or git users:
 ```sh
 sudo rpm-ostree update
+```
+For specific tag users:
+- check for any new relases. [see](https://github.com/vibrantleaf/hyprgreen/releases)
+- then rebase to the new specific release tag
+```sh
+# example
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:v38.0.2
+
 ```
