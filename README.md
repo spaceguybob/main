@@ -26,7 +26,7 @@ Install
 tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
 Install the a specific release of hyprgreen via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:v38.0.1
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:v38.0.2
 ```
 #### Rebase to the hyprgreen nightly build (Not Recomended)
 Install the nightly build of hyprgreen (Not Recomended) via rebase
