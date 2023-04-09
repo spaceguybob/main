@@ -19,6 +19,7 @@ rpm-ostree install -y wlr-randr
 rpm-ostree install -y wlsunset
 rpm-ostree install -y wofi
 rpm-ostree install -y sddm
+rpm-ostree install -y qt5ct
 rpm-ostree install -y hyprland
     
 
@@ -54,3 +55,4 @@ printf 'export XDG_CURRENT_DESKTOP=sway\n' | tee -a /etc/profile
 printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile
 printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile
 printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile
+printf 'export QT_QPA_PLATFORMTHEME=qt5ct\n' | tee -a /etc/profile
