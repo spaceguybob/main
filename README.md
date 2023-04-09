@@ -10,6 +10,7 @@ a custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
+3. [Updating](updating)
 
 ### Why?
 Why not?
@@ -37,4 +38,8 @@ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrant
 Install the 'git' build of hyprgreen (Not Recomended) via rebase
 ```sh
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/vibrantleaf/hyprgreen:main
+```
+### Updating
+```sh
+sudo rpm-ostree update
 ```
