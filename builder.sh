@@ -8,7 +8,8 @@ rpm-ostree install -y gamescope
 rpm-ostree install -y xdg-desktop-portal
 rpm-ostree install -y polkit-gnome
 rpm-ostree install -y mako
-rpm-ostree install -y waybar 
+#rpm-ostree install -y waybar 
+rpm-ostree install -y waybar-hyprland 
 rpm-ostree install -y kitty
 rpm-ostree install -y swaybg
 rpm-ostree install -y swaylock
