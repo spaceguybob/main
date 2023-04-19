@@ -12,6 +12,8 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 - [Updating](#updating)
 - [Enabled flatpak remotes](#enabled-flatpak-remotes)
+- [ISO](#iso)
+
 
 ### Why?
 Why not?
@@ -62,3 +64,6 @@ hyprgreen comes presetup with serveral flatpak remotes enabled, here is the full
 - elemenetory os appcenter
 - endless os apps
 - endless os sdk
+
+### ISO?
+Not yet maybe in the furture
