@@ -11,6 +11,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 3. [Updating](#updating)
+4. [Enabled flatpak remotes](#enabled-flatpak-remotes)
 
 ### Why?
 Why not?
@@ -49,5 +50,15 @@ For specific tag users:
 ```sh
 # example
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
-
 ```
+### Enabled flatpak remotes
+hyprgreen comes presetup with serveral flatpak remotes enabled, here is the full list of enabled remotes:
+- fedora 
+- fedora testing
+- flathub
+- flathub beta
+- gnome apps nightly
+- kde apps nightly
+- elemenetory os appcenter
+- endless os apps
+- endless os sdk

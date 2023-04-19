@@ -35,10 +35,14 @@ rpm-ostree install -y xdg-desktop-portal-hyprland
 rpm-ostree install -y waybar-hyprland 
 rpm-ostree install -y hyprland
 
-# fedora oci
+# fedora
 printf "adding fedora oci to flatpak if it does not exists\n"
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
-  
+
+# fedora testing
+printf "adding fedora oci testing to flatpak if it does not exists\n"
+flatpak remote-add --if-not-exists fedora-testing oci+https://registry.fedoraproject.org#testing
+
 # flathub main
 printf "adding flathub to flatpak if it does not exists\n"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
