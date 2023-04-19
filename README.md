@@ -6,7 +6,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 # Table of Contents
 - [Why?](#why)
 - [Install via Rebase](#install-via-rebase)
-  - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag-recomended)
+  - [Rebase to the latest tag (Recomended)](#rebase-to-the-latest-hyprgreen-tag-recomended)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
