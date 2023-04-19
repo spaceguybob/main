@@ -53,12 +53,12 @@ flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.eleme
 # endless-os
 printf "adding endless os apps and sdk to flatpak if it does not exists\n"
 wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
-flatpak remote-add --if-not-exists -gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-sdk
-flatpak remote-add --if-not-exists -gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-apps
+flatpak remote-add --if-not-exists --gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-sdk
+flatpak remote-add --if-not-exists --gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-apps
 
 # set profile
-touch /etc/profile
-chmod 644 /etc/profile
+#touch /etc/profile
+#chmod 644 /etc/profile
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
 printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile
