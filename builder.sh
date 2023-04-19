@@ -26,8 +26,6 @@ rpm-ostree install -y qt5ct
 rpm-ostree install -y hyprland
 rpm-ostree install -y eom
 
-    
-
 # fedora oci
 printf "adding fedora oci to flatpak if it does not exists\n"
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
@@ -42,7 +40,7 @@ flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/fl
 
 # kdeapps 
 printf "adding kdeapps to flatpak if it does not exists\n"
-flatpak remote-add --if-not-exists kdeapps --from https://distribute.kde.org/kdeapps.flatpakrepo
+flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde.org/kdeapps.flatpakrepo
 
 # gnome-nightly
 printf "adding gnome-nightly to flatpak if it does not exists\n"
@@ -51,7 +49,13 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 # elemenetoryos-appcenter
 printf "adding elemenetoryos-appcenter to flatpak if it does not exists\n"
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
-    
+
+# endless-os
+printf "adding endless os apps and sdk to flatpak if it does not exists\n"
+wget -O- /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
+flatpak remote-add --if-not-exists -gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-sdk
+flatpak remote-add --if-not-exists -gpg-import=/tmp/eos-flatpak-keyring.gpg https://ostree.endlessm.com/ostree/eos-apps
+
 # set profile
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
