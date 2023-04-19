@@ -2,29 +2,38 @@
 set -ouex pipefail
 
 # install packages
+# misc
 rpm-ostree install -y cronie
-rpm-ostree install -y xorg-x11-server-Xwayland
-rpm-ostree install -y gamescope
-rpm-ostree install -y xdg-desktop-portal
 rpm-ostree install -y polkit-gnome
-rpm-ostree install -y mako
-#rpm-ostree install -y waybar 
-rpm-ostree install -y waybar-hyprland 
 rpm-ostree install -y kitty
-rpm-ostree install -y swaybg
-rpm-ostree install -y swaylock
-rpm-ostree install -y swayidle
-rpm-ostree install -y wtype
-rpm-ostree install -y wlogout
-rpm-ostree install -y wlr-randr
-rpm-ostree install -y wlsunset
 rpm-ostree install -y grimshot
+rpm-ostree install -y mako
 rpm-ostree install -y slurp
 rpm-ostree install -y wofi
 rpm-ostree install -y sddm
 rpm-ostree install -y qt5ct
-rpm-ostree install -y hyprland
+rpm-ostree install -y thunar
 rpm-ostree install -y eom
+
+# sway tools
+rpm-ostree install -y swaybg
+rpm-ostree install -y swaylock
+rpm-ostree install -y swayidle
+
+# wayland tools
+rpm-ostree install -y wtype
+rpm-ostree install -y wlogout
+rpm-ostree install -y wlr-randr
+rpm-ostree install -y wlsunset
+rpm-ostree install -y xorg-x11-server-Xwayland
+rpm-ostree install -y gamescope
+
+# hyprland
+#rpm-ostree install -y xdg-desktop-portal
+#rpm-ostree install -y waybar 
+rpm-ostree install -y xdg-desktop-portal-hyprland
+rpm-ostree install -y waybar-hyprland 
+rpm-ostree install -y hyprland
 
 # fedora oci
 printf "adding fedora oci to flatpak if it does not exists\n"
