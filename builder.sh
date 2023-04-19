@@ -27,6 +27,7 @@ rpm-ostree install -y wlr-randr
 rpm-ostree install -y wlsunset
 rpm-ostree install -y xorg-x11-server-Xwayland
 rpm-ostree install -y gamescope
+rpm-ostree install -y clipman
 
 # hyprland
 #rpm-ostree install -y xdg-desktop-portal
