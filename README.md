@@ -4,14 +4,14 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 [![DockerPublish](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) [![Docker Image CI](https://github.com/hyprgreen/main/actions/workflows/docker-image.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-image.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github)
 
 # Table of Contents
-1. [Why?](#why)
-2. [Install via Rebase](#install-via-rebase)
+- [Why?](#why)
+- [Install via Rebase](#install-via-rebase)
   - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag-recomended)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
-3. [Updating](#updating)
-4. [Enabled flatpak remotes](#enabled-flatpak-remotes)
+- [Updating](#updating)
+- [Enabled flatpak remotes](#enabled-flatpak-remotes)
 
 ### Why?
 Why not?
