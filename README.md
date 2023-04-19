@@ -6,7 +6,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 # Table of Contents
 1. [Why?](#why)
 2. [Install via Rebase](#install-via-rebase)
-  - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag)
+  - [Rebase to the latest tag](#rebase-to-the-latest-hyprgreen-tag-recomended)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
@@ -17,7 +17,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 Why not?
 
 ### Install via Rebase
-#### Rebase to the latest hyprgreen tag
+#### Rebase to the latest hyprgreen tag (recomended)
 [see](https://github.com/hyprgreen/main/releases/latest)
 Install the latest release of hyprgreen via rebase
 ```sh
@@ -25,7 +25,7 @@ sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgre
 ```
 #### Rebase to a specific hyprgreen tag
 tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
-Install the a specific release of hyprgreen via rebase
+Install a specific release of hyprgreen via rebase
 ```sh
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
 ```
@@ -49,7 +49,7 @@ For specific tag users:
 - then rebase to the new specific release tag
 ```sh
 # example
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
 ```
 ### Enabled flatpak remotes
 hyprgreen comes presetup with serveral flatpak remotes enabled, here is the full list of enabled remotes:
