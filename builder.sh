@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
+rpm-ostree update
+
 # install packages
 # misc
 rpm-ostree install -y cronie
@@ -15,7 +17,7 @@ rpm-ostree install -y qt5ct
 rpm-ostree install -y thunar
 rpm-ostree install -y eom
 
-rpm-ostree instal -y mpv youtube-dl ffmpeg
+rpm-ostree install -y mpv youtube-dl ffmpeg
 rpm-ostree install -y just
 
 
