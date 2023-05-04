@@ -15,6 +15,10 @@ rpm-ostree install -y qt5ct
 rpm-ostree install -y thunar
 rpm-ostree install -y eom
 
+rpm-ostree instal -y mpv youtube-dl ffmpeg
+rpm-ostree install -y just
+
+
 # sway tools
 rpm-ostree install -y swaybg
 rpm-ostree install -y swaylock
