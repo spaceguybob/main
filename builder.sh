@@ -34,7 +34,7 @@ rpm-ostree install -y \
   pipewire-gstreamer \
   pipewire-pulseaudio \
   pipewire-alsa \
-  pipewire-plugin-jack \
+  pipewire-jack-audio-connection-kit \
   pipewire-plugin-libcamera 
 
   
