@@ -21,6 +21,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 - [Updating](#updating)
+- [Verification](#verification)
 - [ISO Installer?](#iso-installer)
 ### Why?
 Why not?
@@ -111,5 +112,11 @@ For specific tag users:
 # example
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
 ```
+## Verification
+These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
+```sh
+cosign verify --key cosign.pub ghcr.io/hyprgreen/main
+```
+If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
 ### ISO installer?
 Not yet maybe one day
