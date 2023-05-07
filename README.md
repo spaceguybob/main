@@ -1,11 +1,11 @@
 # hyprgreen
 A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://silverblue.fedoraproject.org/)/[kinote](https://kinoite.fedoraproject.org/) [OCI](https://opencontainers.org/) [image](https://manpages.ubuntu.com/manpages/jammy/en/man5/containers-dockerfile.5.html), based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
 
-[![Docker](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github)
-
+[![Docker](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github) ![Latest Tag](https://img.shields.io/github/v/tag/hyprgreen/main?color=lightblue&label=Latest%20Tag&logo=git&logoColor=lightblue&sort=semver)
 # Table of Contents
 - [Why?](#why)
 - [Whats incuded?](#whats-incuded)
+  - [All of ublue-os's features](#all-of-ublue-oss-features)
   - [Desktop enviroment](#desktop-enviroment)
   - [Preinstalled apps](#preinstalled-apps)
   - [Command line apps](#command-line-apps)
@@ -14,6 +14,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [wlroots & wayland utils](#wlroots--wayland-utils)
    - [System Tweaks](#system-tweaks)
   - [Incuded flatpak remotes](#incuded-flatpak-remotes)
+- [Tips and tricks](#tips-and-tricks)
 - [Install via Rebase](#install-via-rebase)
   - [Rebase to the latest tag (Recomended)](#rebase-to-the-latest-hyprgreen-tag-recomended)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
@@ -21,12 +22,11 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 - [Updating](#updating)
 - [ISO Installer?](#iso-installer)
-
-
 ### Why?
 Why not?
-
 ### Whats incuded?
+#### All of ublue-os's features:
+See: [full list of ublue-os's features](https://github.com/ublue-os/main#features)
 #### Desktop enviroment:
 - `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 
 - `waybar` polybar like wlroots status bar
@@ -74,7 +74,8 @@ Hyprgreen comes with serveral flatpak remotes prenabled:
  - `endlessOS apps` endless os's flatpak remote
  - `kde apps nightly` kde's flatpak remote
  - `gnome apps nightly` gnome's flatpak remote
-
+### Tips and tricks:
+See: [ublue-os's tips and tricks](https://github.com/ublue-os/main#tips-and-tricks)
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag (recomended)
 [see](https://github.com/hyprgreen/main/releases/latest)
@@ -110,6 +111,5 @@ For specific tag users:
 # example
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
 ```
-
 ### ISO installer?
 Not yet maybe one day
