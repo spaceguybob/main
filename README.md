@@ -30,7 +30,7 @@ Why not?
 - `wlogout` logout screen for wayland
 - `gnome polkit` gnome's policy kit
 - `gamescope` & `xwayland` SteamOS's  micro-compositor and xorg emulation layer
-- `qt5` & `qt6` Wayland Support
+- `qt5` & `qt6` qt5 and qt6 Wayland Support
 - `pipewire` & `wireplumber`
 - `xdg-desktop-portal-hyprland` hyprland's extended version of `xdg-desktop-portal`
 #### Preinstalled apps:
