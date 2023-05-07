@@ -1,8 +1,8 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 
-FROM ghcr.io/ublue-os/base:latest as part1
+FROM ghcr.io/ublue-os/base:latest as builder
 
-COPY --from=part1 /etc/justfile /etc/justfile
+COPY --from=builder /etc/justfile /etc/justfile
 
 FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
 
