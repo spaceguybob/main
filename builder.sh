@@ -35,7 +35,8 @@ rpm-ostree install -y \
   pipewire-pulseaudio \
   pipewire-alsa \
   pipewire-jack-audio-connection-kit \
-  pipewire-plugin-libcamera 
+  pipewire-plugin-libcamera \
+  just
 
   
 rpm-ostree install -y \
