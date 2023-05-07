@@ -1,17 +1,25 @@
 # hyprgreen
 A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://silverblue.fedoraproject.org/)/[kinote](https://kinoite.fedoraproject.org/) [OCI](https://opencontainers.org/) [image](https://manpages.ubuntu.com/manpages/jammy/en/man5/containers-dockerfile.5.html), based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
 
-[![DockerPublish](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github)
+[![Docker](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github)
 
 # Table of Contents
 - [Why?](#why)
+- [Whats incuded?](#whats-incuded)
+  - [Desktop enviroment](#desktop-enviroment)
+  - [Preinstalled apps](#preinstalled-apps)
+  - [Command line apps](#command-line-apps)
+  - [Graphical apps](#graphical-apps)
+    - [Meida players (video & audio)](#meida-players-video--audio)
+  - [wlroots & wayland utils](#wlroots--wayland-utils)
+   - [System Tweaks](#system-tweaks)
+  - [Incuded flatpak remotes](#incuded-flatpak-remotes)
 - [Install via Rebase](#install-via-rebase)
   - [Rebase to the latest tag (Recomended)](#rebase-to-the-latest-hyprgreen-tag-recomended)
   - [Rebase to a specific tag](#rebase-to-a-specific-hyprgreen-tag)
   - [Rebase to the hyprgreen nightly build (Not Recomended)](#rebase-to-the-hyprgreen-nightly-build-not-recomended)
   - [Rebase to the hyprgreen git build (Not Recomended)](#rebase-to-the-hyprgreen-git-build-not-recomended)
 - [Updating](#updating)
-- [Enabled flatpak remotes](#enabled-flatpak-remotes)
 - [ISO Installer?](#iso-installer)
 
 
@@ -41,7 +49,7 @@ Why not?
   - `thunar` file manager
   - `eye of mate` image viewer
   - `qt5ct` qt5 and settings
-##### Generic wlroots & wayland utils:
+##### wlroots & wayland utils:
   - `wtype` xdotool for wayland
   - `wlsunset` nightmode/redshift for wayland
   - `wlr-randr` xrandr for wayland
