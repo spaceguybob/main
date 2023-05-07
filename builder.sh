@@ -12,13 +12,15 @@ rpm-ostree install -y mako
 rpm-ostree install -y slurp
 rpm-ostree install -y wofi
 rpm-ostree install -y sddm
-rpm-ostree install -y qt5ct
+rpm-ostree install -y qt5ct qt6ct
 rpm-ostree install -y thunar
 rpm-ostree install -y eom
+
 
 rpm-ostree install -y mpv 
 rpm-ostree install -y youtube-dl
 rpm-ostree install -y ffmpeg
+rpm-ostree install -y mpd
 
 # sway tools
 rpm-ostree install -y swaybg
@@ -33,6 +35,7 @@ rpm-ostree install -y wlsunset
 rpm-ostree install -y xorg-x11-server-Xwayland
 rpm-ostree install -y gamescope
 rpm-ostree install -y clipman
+rpm-ostree install -y qt5-qtwayland qt6-qtwayland
 
 # hyprland
 #rpm-ostree install -y xdg-desktop-portal

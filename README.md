@@ -18,6 +18,55 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 ### Why?
 Why not?
 
+### Whats incuded?
+#### Desktop enviroment:
+- `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 
+- `waybar` polybar like wlroots status bar
+- `kitty terminal` fast feature-rich terminal with GPU acceleration
+- `sddm` kde's Simple Desktop Display Manager
+- `clipman` clipboard manager
+- `wofi` rofi like lancher for wayand
+- `mako` notication deamon
+- `wlogout` logout screen for wayland
+- `gnome polkit` gnome's policy kit
+- `gamescope` & `xwayland` SteamOS's  micro-compositor and xorg emulation layer
+- `qt5` & `qt6` Wayland Support
+- `pipewire` & `wireplumber`
+- `xdg-desktop-portal-hyprland` hyprland's extended version of `xdg-desktop-portal`
+#### Preinstalled apps:
+##### Command line apps:
+  - `youtube-dl`
+  - `ffmpeg` 
+##### Graphical apps:
+  - `thunar` file manager
+  - `eye of mate` image viewer
+  - `qt5ct` & `qt6ct` qt5 and qt6 settings
+##### Generic wlroots & wayland utils:
+  - `wtype` xdotool for wayland
+  - `wlsunset` nightmode/redshift for wayland
+  - `wlr-randr` xrandr for wayland
+  - `swaybg`  wallpaper setter for wlroots
+  - `swaylock` lock screen for wlroots
+  - `swayidle` idle screen for wlroot
+  - `grim` & `grimshot` screenshoting tool for wayland
+##### Meida players (video & audio):
+  - `mpv` a powerfull video player
+  - `mpd` the music player deamon
+#### System Tweaks:
+Hyprgreen comes with a few System tweaks predone:
+ - Aliased `/bin/sh` to the `dash` shell to speed up `POSIX` shell scripts
+ - Set `XDG_CURRENT_DESKTOP` & `XDG_SESSION_DESKTOP` to `sway` improve compatibility with graphical apps
+#### Incuded flatpak remotes:
+Hyprgreen comes with serveral flatpak remotes prenabled:
+ - `fedora` fedora's offical flatpak remote
+ - `fedora testing`  fedora's testing flatpak remote
+ - `flathub` flathub's offical flatpak remote
+ - `flathub beta` flathub's beta flatpak remote
+ - `elemenetoryOS appcenter` elementory os's flatpak remote
+ - `endlessOS apps` endless os's flatpak remote
+ - `kde apps nightly` kde's flatpak remote
+ - `gnome apps nightly` gnome's flatpak remote
+
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag (recomended)
 [see](https://github.com/hyprgreen/main/releases/latest)
@@ -53,17 +102,6 @@ For specific tag users:
 # example
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
 ```
-### Enabled flatpak remotes
-hyprgreen comes presetup with serveral flatpak remotes enabled, here is the full list of enabled remotes:
-- fedora 
-- fedora testing
-- flathub
-- flathub beta
-- gnome apps nightly
-- kde apps nightly
-- elemenetory os appcenter
-- endless os apps
-- endless os sdk
 
 ### ISO installer?
-Not yet maybe in the furture
+Not yet maybe one day
