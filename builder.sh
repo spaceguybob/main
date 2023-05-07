@@ -13,7 +13,6 @@ rpm-ostree install -y \
   wofi \
   sddm \
   qt5ct \
-  qt6ct \
   thunar \
   eom \
   mpv  \
@@ -30,9 +29,10 @@ rpm-ostree install -y \
   xorg-x11-server-Xwayland \
   gamescope \
   clipman \
-  qt5-qtwayland \ 
-  qt6-qtwayland
-
+  qt5-qtwayland 
+  
+  # qt6-qtwayland
+  #  qt6ct 
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
