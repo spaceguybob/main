@@ -81,9 +81,9 @@ flatpak remote-add --if-not-exists --gpg-import=/tmp/eos-flatpak-keyring.gpg end
 # set profile
 #touch /etc/profile
 #chmod 644 /etc/profile
-printf 'alias /usr/bin/sh /usr/bin/dash' | tee -a /etc/profile
-printf 'alias /bin/sh /usr/bin/dash' | tee -a /etc/profile
-printf 'alias sh /usr/bin/dash' | tee -a /etc/profile
+printf 'alias /usr/bin/sh /usr/bin/dash\n' | tee -a /etc/profile
+printf 'alias /bin/sh /usr/bin/dash\n' | tee -a /etc/profile
+printf 'alias sh /usr/bin/dash\n' | tee -a /etc/profile
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
 printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile
