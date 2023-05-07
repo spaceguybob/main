@@ -37,8 +37,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-       Install the cosign tool except on PR
-       https://github.com/sigstore/cosign-installer
+      # Install the cosign tool except on PR
+      # https://github.com/sigstore/cosign-installer
       - name: Install cosign
         if: github.event_name != 'pull_request'
         uses: sigstore/cosign-installer@f3c664df7af409cb4873aa5068053ba9d61a57b6 #v2.6.0
@@ -82,11 +82,11 @@ jobs:
           cache-to: type=gha,mode=max
 
 
-       Sign the resulting Docker image digest except on PRs.
-       This will only write to the public Rekor transparency log when the Docker
-       repository is public to avoid leaking data.  If you would like to publish
-       transparency data even for private images, pass --force to cosign below.
-       https://github.com/sigstore/cosign
+     # Sign the resulting Docker image digest except on PRs.
+     # This will only write to the public Rekor transparency log when the Docker
+     # repository is public to avoid leaking data.  If you would like to publish
+     #  transparency data even for private images, pass --force to cosign below.
+     # https://github.com/sigstore/cosign
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
         env:
