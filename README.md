@@ -30,7 +30,7 @@ Why not?
 - `wlogout` logout screen for wayland
 - `gnome polkit` gnome's policy kit
 - `gamescope` & `xwayland` SteamOS's  micro-compositor and xorg emulation layer
-- `qt5` & `qt6` Wayland Support
+- `qt5` Wayland Support
 - `pipewire` & `wireplumber`
 - `xdg-desktop-portal-hyprland` hyprland's extended version of `xdg-desktop-portal`
 #### Preinstalled apps:
@@ -40,7 +40,7 @@ Why not?
 ##### Graphical apps:
   - `thunar` file manager
   - `eye of mate` image viewer
-  - `qt5ct` & `qt6ct` qt5 and qt6 settings
+  - `qt5ct` qt5 and settings
 ##### Generic wlroots & wayland utils:
   - `wtype` xdotool for wayland
   - `wlsunset` nightmode/redshift for wayland

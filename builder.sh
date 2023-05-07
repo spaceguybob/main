@@ -29,10 +29,15 @@ rpm-ostree install -y \
   xorg-x11-server-Xwayland \
   gamescope \
   clipman \
-  qt5-qtwayland 
+  qt5-qtwayland \
+  wireplumber \
+  pipewire-gstreamer \
+  pipewire-pulseaudio \
+  pipewire-alsa \
+  pipewire-plugin-jack \
+  pipewire-plugin-libcamera 
+
   
-  # qt6-qtwayland
-  #  qt6ct 
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
