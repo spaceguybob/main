@@ -5,7 +5,7 @@ A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://
 
 ### Notice!
 ```txt
-Hyprgreen is in no way supported by, or a part of: Fedora project, Fedora Silverblue, UBlue-OS, Hyprland or any other Software or Project mentioned.
+Hyprgreen is in no way supported by, or a part of: Fedora project, UBlue-OS, Hyprland or any other Software or Project mentioned.
 The Hyprgreen container is Licensed under the Apache v2 License, however you may be subject to other Licenses from other software incuded.
 Please read the Code of Conduct before contributing to hyprgreen, (credit to ublue-os).
 ```
