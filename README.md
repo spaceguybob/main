@@ -39,7 +39,7 @@ See: [full list of ublue-os's features](https://github.com/ublue-os/main#feature
 #### Desktop enviroment:
 - `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 
 - `waybar` polybar like wlroots status bar
-- `kitty terminal` fast feature-rich terminal with GPU acceleration
+- `kitty` fast feature-rich terminal with GPU acceleration
 - `sddm` kde's Simple Desktop Display Manager
 - `clipman` clipboard manager
 - `wofi` rofi like lancher for wayand
