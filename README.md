@@ -49,7 +49,7 @@ See: [full list of ublue-os's features](https://github.com/ublue-os/main#feature
 ##### Graphical apps:
   - `thunar` file manager
   - `eye of mate` image viewer
-  - `qt5ct` qt5 and settings
+  - `qt5ct` qt5 settings
 ##### wlroots & wayland utils:
   - `wtype` xdotool for wayland
   - `wlsunset` nightmode/redshift for wayland
