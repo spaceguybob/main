@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
-rpm-ostree update
-
 # install packages
 # misc
 rpm-ostree install -y cronie
