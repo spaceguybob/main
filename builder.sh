@@ -38,8 +38,11 @@ rpm-ostree install -y \
   pipewire-plugin-libcamera \
   just \
   stow \
-  git
-
+  git \
+  pam-u2f \
+  pamu2fcfg \
+  fido2-tools
+  
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
