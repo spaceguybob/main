@@ -41,7 +41,8 @@ rpm-ostree install -y \
   git \
   pam-u2f \
   pamu2fcfg \
-  fido2-tools
+  fido2-tools \
+  unrar
   
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
