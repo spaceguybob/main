@@ -37,7 +37,7 @@ Why not?
 #### All of ublue-os's features:
 See: [full list of ublue-os's features](https://github.com/ublue-os/main#features)
 #### Desktop enviroment:
-- `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks. 
+- `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - `waybar` polybar like wlroots status bar
 - `kitty` fast feature-rich terminal with GPU acceleration
 - `sddm` kde's Simple Desktop Display Manager
@@ -53,7 +53,7 @@ See: [full list of ublue-os's features](https://github.com/ublue-os/main#feature
 #### Preinstalled apps:
 ##### Command line apps:
   - `youtube-dl`
-  - `ffmpeg` 
+  - `ffmpeg`
 ##### Graphical apps:
   - `thunar` file manager
   - `eye of mate` image viewer
@@ -80,7 +80,6 @@ Hyprgreen comes with serveral flatpak remotes prenabled:
  - `flathub` flathub's offical flatpak remote
  - `flathub beta` flathub's beta flatpak remote
  - `elemenetoryOS appcenter` elementory os's flatpak remote
- - `endlessOS apps` endless os's flatpak remote
  - `kde apps nightly` kde's flatpak remote
  - `gnome apps nightly` gnome's flatpak remote
 ### Tips and tricks:

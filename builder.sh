@@ -43,13 +43,13 @@ rpm-ostree install -y \
   pamu2fcfg \
   fido2-tools \
   unrar
-  
+
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
   hyprland
 
-wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
+#wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
 
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
 flatpak remote-add --if-not-exists fedora-testing oci+https://registry.fedoraproject.org#testing
@@ -58,8 +58,6 @@ flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/fl
 flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde.org/kdeapps.flatpakrepo
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
-flatpak remote-add --if-not-exists --gpg-import=/tmp/eos-flatpak-keyring.gpg endlessos-sdk https://ostree.endlessm.com/ostree/eos-sdk
-flatpak remote-add --if-not-exists --gpg-import=/tmp/eos-flatpak-keyring.gpg endlessos-apps https://ostree.endlessm.com/ostree/eos-apps
 
 printf 'alias "docker"="/usr/bin/podman"\n' | tee -a /etc/profile
 printf 'alias "sh"="/usr/bin/dash"\n' | tee -a /etc/profile
