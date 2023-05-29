@@ -1,16 +1,1 @@
-ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
-
-FROM ghcr.io/ublue-os/base:latest AS just
-
-FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
-
-COPY ./copr-solopasha-hyprland.repo /etc/yum.repos.d/copr-solopasha-hyprland.repo
-
-COPY --from=just /etc/justfile /etc/justfile
-
-COPY ./builder.sh /tmp/builder.sh
-RUN bash /tmp/builder.sh
-
-RUN rm -rf /tmp/* /var/*
-RUN ostree container commit
-RUN mkdir -p /var/tmp && chmod -R 1777 /var/tmp
+Containerfile
