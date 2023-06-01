@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
-# update
-rpm-ostree update
+# refresh
+rpm-ostree refresh-md
 
 # install packages
 rpm-ostree install -y \
