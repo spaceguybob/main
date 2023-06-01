@@ -2,7 +2,7 @@
 set -ouex pipefail
 
 # refresh
-rpm-ostree refresh-md
+#rpm-ostree refresh-md
 
 # install packages
 rpm-ostree install -y \
@@ -50,6 +50,10 @@ rpm-ostree install -y \
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
+  hyprpicker \
+  hyprpaper \
+  hyprland-plugins \
+  hyprland-autoname-workspaces \
   hyprland
 
 #wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
