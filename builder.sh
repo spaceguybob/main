@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
+# update
+rpm-ostree update -y
+
 # install packages
 rpm-ostree install -y \
   dash \
