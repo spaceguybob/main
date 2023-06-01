@@ -2,7 +2,7 @@
 set -ouex pipefail
 
 # update
-rpm-ostree update -y
+rpm-ostree update
 
 # install packages
 rpm-ostree install -y \
