@@ -6,7 +6,7 @@ rpm-ostree install -y \
   dash \
   cronie \
   polkit-gnome \
-  kitty \
+  alacritty \
   grimshot \
   mako \
   slurp \
