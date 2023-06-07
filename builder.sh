@@ -4,11 +4,11 @@ set -ouex pipefail
 # refresh
 #rpm-ostree refresh-md
 
-rpm-ostree override remove -y \
-  sudo && \
-  rpm-ostree install -y \
-  opendoas && \
-  wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
+rpm-ostree override remove \
+  sudo 
+rpm-ostree install -y \
+  opendoas
+wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
 
 rpm-ostree install -y \
   dash \
