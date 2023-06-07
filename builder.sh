@@ -66,8 +66,8 @@ flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
 
-printf 'alias "docker"="/usr/bin/podman"\n' | tee -a /etc/profile
-printf 'alias "sh"="/usr/bin/dash"\n' | tee -a /etc/profile
+#printf 'alias "docker"="/usr/bin/podman"\n' | tee -a /etc/profile
+
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
 printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile

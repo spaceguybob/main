@@ -2,7 +2,8 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 
 FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
 
-COPY ./copr-solopasha-hyprland.repo /etc/yum.repos.d/copr-solopasha-hyprland.repo
+COPY ./usr /usr
+COPY ./etc /etc
 
 COPY ./builder.sh /tmp/builder.sh
 RUN bash /tmp/builder.sh
