@@ -5,7 +5,7 @@ set -ouex pipefail
 #rpm-ostree refresh-md
 
 rpm-ostree override remove \
-  sudo 
+  sudo  sudo-python-plugin
 rpm-ostree install -y \
   opendoas
 wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
