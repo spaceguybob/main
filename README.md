@@ -1,5 +1,12 @@
-# hyprgreen
-[![Docker](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github) ![Latest Tag](https://img.shields.io/github/v/tag/hyprgreen/main?color=lightblue&label=Latest%20Tag&logo=git&logoColor=lightblue&sort=semver) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Issues](https://img.shields.io/github/issues/hyprgreen/main?color=pink&style=plastic')](https://github.com/hyprgreen/main/issues)
+# hyprgreen nvidia
+
+## WARNINGS
+- I cant test nvidia
+- nvidia is still very buggy on both wayland and hyprland
+  See: https://wiki.hyprland.org/Nvidia/
+
+
+[![Docker](https://github.com/hyprgreen/nvidia/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/nvidia/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/nvidia?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/nvidia?color=teal&label=Commit%20Activity&logo=github) ![Latest Tag](https://img.shields.io/github/v/tag/hyprgreen/main?color=lightblue&label=Latest%20Tag&logo=git&logoColor=lightblue&sort=semver) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Issues](https://img.shields.io/github/issues/hyprgreen/nvidia?color=pink&style=plastic')](https://github.com/hyprgreen/nvidia/issues)
 
 A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://silverblue.fedoraproject.org/)/[kinote](https://kinoite.fedoraproject.org/) [OCI](https://opencontainers.org/) [image](https://manpages.ubuntu.com/manpages/jammy/en/man5/containers-dockerfile.5.html), based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
 
@@ -39,7 +46,7 @@ See: [full list of ublue-os's features](https://github.com/ublue-os/main#feature
 #### Desktop enviroment:
 - `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - `waybar` polybar like wlroots status bar
-- `kitty` fast feature-rich terminal with GPU acceleration
+- `alacritty` fast terminal with GPU acceleration
 - `sddm` kde's Simple Desktop Display Manager
 - `clipman` clipboard manager
 - `wofi` rofi like lancher for wayand
@@ -86,26 +93,26 @@ Hyprgreen comes with serveral flatpak remotes prenabled:
 See: [ublue-os's tips and tricks](https://github.com/ublue-os/main#tips-and-tricks)
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag (recomended)
-[see](https://github.com/hyprgreen/main/releases/latest)
+[see](https://github.com/hyprgreen/nvidia/releases/latest)
 Install the latest release of hyprgreen via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:latest
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:latest
 ```
 #### Rebase to a specific hyprgreen tag
 tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
 Install a specific release of hyprgreen via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:v38.0.2
 ```
 #### Rebase to the hyprgreen nightly build (Not Recomended)
 Install the nightly build of hyprgreen (Not Recomended) via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:nightly
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:nightly
 ```
 #### Rebase to the hyprgreen git build (Not Recomended)
 Install the 'git' build of hyprgreen (Not Recomended) via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:main
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:main
 ```
 ### Updating
 For latest,nightly or git users:
@@ -113,16 +120,16 @@ For latest,nightly or git users:
 sudo rpm-ostree update
 ```
 For specific tag users:
-- check for any new relases. [see](https://github.com/hyprgreen/main/releases)
+- check for any new relases. [see](https://github.com/hyprgreen/nvidia/releases)
 - then rebase to the new specific release tag
 ```sh
 # example
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:v38.0.5
 ```
 ## Verification
 These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
 ```sh
-cosign verify --key cosign.pub ghcr.io/hyprgreen/main
+cosign verify --key cosign.pub ghcr.io/hyprgreen/nvidia
 ```
 If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
 ### ISO installer?
