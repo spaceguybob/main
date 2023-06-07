@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 
-FROM ghcr.io/ublue-os//base-nvidia:"${FEDORA_MAJOR_VERSION}"
+FROM ghcr.io/ublue-os/base-nvidia:"${FEDORA_MAJOR_VERSION}"
 
 COPY ./copr-solopasha-hyprland.repo /etc/yum.repos.d/copr-solopasha-hyprland.repo
 
