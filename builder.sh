@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
-# refresh
-#rpm-ostree refresh-md
-
+# sudo -> doas + doas-sudo-shim
 rm /etc/dnf/protected.d/sudo.conf
-
 rpm-ostree override remove \
   sudo  sudo-python-plugin
 rpm-ostree install -y \
   opendoas
 wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
-
+chown +x /usr/bin/sudo
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee -a /etc/dnf/protected.d/doas.conf
 
+# install packages
 rpm-ostree install -y \
   dash \
   cronie \
@@ -57,6 +55,7 @@ rpm-ostree install -y \
   fido2-tools \
   unrar
 
+# install hyprland
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
@@ -76,8 +75,7 @@ flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
 
-#printf 'alias "docker"="/usr/bin/podman"\n' | tee -a /etc/profile
-
+# set needed profile vars
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
 printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile
