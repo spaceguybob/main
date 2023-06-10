@@ -11,11 +11,6 @@ The Hyprgreen Project is Licensed under the Apache v2 License, however you may b
 Please read the Code of Conduct before contributing to hyprgreen, (credit to ublue-os).
 ```
 
-## WARNINGS
-- I cant test nvidia
-- nvidia is still very buggy on both wayland and hyprland
-  See: https://wiki.hyprland.org/Nvidia/
-
 # Table of Contents
 - [Why?](#why)
 - [Whats incuded?](#whats-incuded)
@@ -95,23 +90,23 @@ See: [ublue-os's tips and tricks](https://github.com/ublue-os/main#tips-and-tric
 [see](https://github.com/hyprgreen/nvidia/releases/latest)
 Install the latest release of hyprgreen via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:latest
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:latest
 ```
 #### Rebase to a specific hyprgreen tag
 tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
 Install a specific release of hyprgreen via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:v38.0.2
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
 ```
 #### Rebase to the hyprgreen nightly build (Not Recomended)
 Install the nightly build of hyprgreen (Not Recomended) via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:nightly
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:nightly
 ```
 #### Rebase to the hyprgreen git build (Not Recomended)
 Install the 'git' build of hyprgreen (Not Recomended) via rebase
 ```sh
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:main
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:main
 ```
 ### Updating
 For latest,nightly or git users:
@@ -123,12 +118,12 @@ For specific tag users:
 - then rebase to the new specific release tag
 ```sh
 # example
-sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/nvidia:v38.0.5
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.5
 ```
 ## Verification
 These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
 ```sh
-cosign verify --key cosign.pub ghcr.io/hyprgreen/nvidia
+cosign verify --key cosign.pub ghcr.io/hyprgreen/main
 ```
 If you're forking this repo you should [read the docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets) on keeping secrets in github. You need to [generate a new keypair](https://docs.sigstore.dev/cosign/overview/) with cosign. The public key can be in your public repo (your users need it to check the signatures), and you can paste the private key in Settings -> Secrets -> Actions.
 ### ISO installer?

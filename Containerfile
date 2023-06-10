@@ -1,4 +1,5 @@
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
+FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
 
 COPY ./etc /etc
 

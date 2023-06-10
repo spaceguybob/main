@@ -64,8 +64,8 @@ rpm-ostree install -y \
   hyprpaper \
   hyprland-plugins \
   hyprland-autoname-workspaces \
-  hyprland-nvidia
-
+  hyprland
+  
 #wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
 
 flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
@@ -85,8 +85,3 @@ printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile
 printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile
 printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile
 printf 'export QT_QPA_PLATFORMTHEME=qt5ct\n' | tee -a /etc/profile
-printf 'export XDG_SESSION_TYPE=nvidia\n' | tee -a /etc/profile
-printf 'export GBM_BACKEND=nvidia-drm\n' | tee -a /etc/profile
-printf 'export LIBVA_DRIVER_NAME=nvidia\n' | tee -a /etc/profile
-printf 'export __GLX_VENDOR_LIBRARY_NAME=nvidia\n' | tee -a /etc/profile
-printf 'export WLR_NO_HARDWARE_CURSORS=1\n' | tee -a /etc/profile
