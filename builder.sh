@@ -14,6 +14,7 @@ printf 'opendoas\n' | tee -a /etc/dnf/protected.d/doas.conf
 
 # install packages
 rpm-ostree install -y \
+  podman-docker \
   dash \
   cronie \
   polkit-gnome \
