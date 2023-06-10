@@ -1,6 +1,6 @@
-# hyprgreen nvidia
+# hyprgreen main
 
-[![Docker](https://github.com/hyprgreen/nvidia/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/nvidia/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/nvidia?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/nvidia?color=teal&label=Commit%20Activity&logo=github) ![Latest Tag](https://img.shields.io/github/v/tag/hyprgreen/main?color=lightblue&label=Latest%20Tag&logo=git&logoColor=lightblue&sort=semver) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Issues](https://img.shields.io/github/issues/hyprgreen/nvidia?color=pink&style=plastic')](https://github.com/hyprgreen/nvidia/issues)
+[![Docker](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hyprgreen/main/actions/workflows/docker-publish.yml) ![Latest release date](https://img.shields.io/github/release-date/hyprgreen/main?color=pink&label=Latest%20Release%20Date&logo=github) ![Commit Activity](https://img.shields.io/github/commit-activity/w/hyprgreen/main?color=teal&label=Commit%20Activity&logo=github) ![Latest Tag](https://img.shields.io/github/v/tag/hyprgreen/main?color=lightblue&label=Latest%20Tag&logo=git&logoColor=lightblue&sort=semver) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Issues](https://img.shields.io/github/issues/hyprgreen/main?color=pink&style=plastic')](https://github.com/hyprgreen/main/issues)
 
 A custom experimental [fedora](https://fedoraproject.org/) [silverblue](https://silverblue.fedoraproject.org/)/[kinote](https://kinoite.fedoraproject.org/) [OCI](https://opencontainers.org/) [image](https://manpages.ubuntu.com/manpages/jammy/en/man5/containers-dockerfile.5.html), based on [ublue-os](https://github.com/ublue-os/) with the [hyprland](https://hyprland.org/) wayland compositor.
 
@@ -38,7 +38,7 @@ Why not?
 #### All of ublue-os's features:
 See: [full list of ublue-os's features](https://github.com/ublue-os/main#features)
 #### Desktop enviroment:
-- `hyprland-nvidia` dynamic tiling Wayland compositor that doesn't sacrifice on its looks. with the nvidia patch
+- `hyprland` dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 - `waybar` polybar like wlroots status bar
 - `alacritty` fast terminal with GPU acceleration
 - `sddm` kde's Simple Desktop Display Manager
@@ -87,7 +87,7 @@ Hyprgreen comes with serveral flatpak remotes prenabled:
 See: [ublue-os's tips and tricks](https://github.com/ublue-os/main#tips-and-tricks)
 ### Install via Rebase
 #### Rebase to the latest hyprgreen tag (recomended)
-[see](https://github.com/hyprgreen/nvidia/releases/latest)
+[see](https://github.com/hyprgreen/main/releases/latest)
 Install the latest release of hyprgreen via rebase
 ```sh
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:latest
@@ -114,7 +114,7 @@ For latest,nightly or git users:
 sudo rpm-ostree update
 ```
 For specific tag users:
-- check for any new relases. [see](https://github.com/hyprgreen/nvidia/releases)
+- check for any new relases. [see](https://github.com/hyprgreen/main/releases)
 - then rebase to the new specific release tag
 ```sh
 # example
