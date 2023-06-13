@@ -6,8 +6,8 @@ COPY ./etc /etc
 COPY ./builder.sh /tmp/builder.sh
 RUN bash /tmp/builder.sh
 
-COPY ./usr /usr
-RUN chmod +x /usr/bin/sh
+#COPY ./usr /usr
+#RUN chmod +x /usr/bin/sh
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit

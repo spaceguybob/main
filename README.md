@@ -72,7 +72,6 @@ See: [full list of ublue-os's features](https://github.com/ublue-os/main#feature
   - `mpd` the music player deamon
 #### System Tweaks:
 Hyprgreen comes with a few System tweaks predone:
- - Aliased `/bin/sh` to the `dash` shell to speed up `POSIX` shell scripts
  - Set `XDG_CURRENT_DESKTOP` & `XDG_SESSION_DESKTOP` to `sway` improve compatibility with graphical apps
 #### Incuded flatpak remotes:
 Hyprgreen comes with serveral flatpak remotes prenabled:
