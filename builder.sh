@@ -11,6 +11,8 @@ wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
 chmod +x /usr/bin/sudo
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee -a /etc/dnf/protected.d/doas.conf
+chown -c root:root /etc/doas.conf
+chmod -c 0400 /etc/doas.conf
 
 # install packages
 rpm-ostree install -y \
