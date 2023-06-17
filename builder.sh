@@ -3,12 +3,12 @@ set -ouex pipefail
 
 # sudo -> doas + doas-sudo-shim
 rm /etc/dnf/protected.d/sudo.conf
-#rpm-ostree override remove \
-#  sudo  sudo-python-plugin
+rpm-ostree override remove \
+  sudo sudo-python-plugin
 rpm-ostree install -y \
   opendoas
-#wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
-#chmod +x /usr/bin/sudo
+wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
+chmod +x /usr/bin/sudo
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee /etc/dnf/protected.d/doas.conf
 chmod 644 /etc/doas.conf
