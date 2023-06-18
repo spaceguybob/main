@@ -92,7 +92,7 @@ Install the latest release of hyprgreen via rebase
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:latest
 ```
 #### Rebase to a specific hyprgreen tag
-tag [see](https://github.com/vibrantleaf/hyprgreen/releases)
+tag [see](https://github.com/hyprgreen/main/releases)
 Install a specific release of hyprgreen via rebase
 ```sh
 sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/hyprgreen/main:v38.0.2
