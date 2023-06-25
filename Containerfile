@@ -1,4 +1,4 @@
-FROM docker pull ghcr.io/vibrantleaf/doas-sudo-shim-builder:master AS doas-sudo-shim
+FROM docker pull ghcr.io/vibrantleaf/doas-sudo-shim-builder:master AS doassudoshim
 
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
@@ -9,8 +9,8 @@ COPY ./usr /usr
 COPY ./builder.sh /tmp/builder.sh
 RUN bash /tmp/builder.sh
 
-COPY --from=doas-sudo-shim /usr/bin/sudo /usr/bin/sudo
-COPY --from=doas-sudo-shim /usr/share/man/man1/sudo.1 /usr/share/man/man1/sudo.1
+COPY --from=doassudoshim /usr/bin/sudo /usr/bin/sudo
+COPY --from=doassudoshim /usr/share/man/man1/sudo.1 /usr/share/man/man1/sudo.1
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
