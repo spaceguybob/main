@@ -8,6 +8,6 @@ if [ ! -z "$HOME" ] && [ -d "$HOME" ] && [ ! -f "${HOME}/.justfile" ]; then
 !include /usr/share/ublue-os/just/custom.just
 !include /usr/share/hyprgreen/just/doas-conf.just
 !include /usr/share/hyprgreen/just/recomended-vars.just
-!include /usr/share/hyprgreen-os/just/add-flatpak-remotes.just
+!include /usr/share/hyprgreen/just/add-flatpak-remotes.just
 EOF
 fi
