@@ -1,4 +1,4 @@
-FROM docker pull ghcr.io/vibrantleaf/doas-sudo-shim-builder:master AS doassudoshim
+FROM ghcr.io/vibrantleaf/doas-sudo-shim-builder:master AS doassudoshim
 
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION:-38}"
 FROM ghcr.io/ublue-os/base-main:"${FEDORA_MAJOR_VERSION}"
