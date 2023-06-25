@@ -10,7 +10,6 @@ rpm-ostree override remove \
 rpm-ostree install -y \
   opendoas
 
-wget -O /usr/bin/sudo https://github.com/jirutka/doas-sudo-shim/raw/v0.1.1/sudo
 chmod +x /usr/bin/sudo
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee /etc/dnf/protected.d/doas.conf
@@ -81,12 +80,11 @@ flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde
 flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
 flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
 
-
-printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile
-printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile
-printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile
-printf 'export XDG_CURRENT_DESKTOP=sway\n' | tee -a /etc/profile
-printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile
-printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile
-printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile
-printf 'export QT_QPA_PLATFORMTHEME=qt5ct\n' | tee -a /etc/profile
+printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export XDG_CURRENT_DESKTOP=sway\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
+printf 'export QT_QPA_PLATFORMTHEME=qt5ct\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
