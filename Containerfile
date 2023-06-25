@@ -9,6 +9,7 @@ RUN bash /tmp/builder.sh
 
 COPY --from=ghcr.io/vibrantleaf/doas-sudo-shim-builder:master /usr/bin/sudo /usr/bin/sudo
 COPY --from=ghcr.io/vibrantleaf/doas-sudo-shim-builder:master  /usr/share/man/man1/sudo.1 /usr/share/man/man1/sudo.1
+RUN chmod +x /usr/bin/sudo
 
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit

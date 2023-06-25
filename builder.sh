@@ -10,7 +10,6 @@ rpm-ostree override remove \
 rpm-ostree install -y \
   opendoas
 
-chmod +x /usr/bin/sudo
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee /etc/dnf/protected.d/doas.conf
 chmod 644 /etc/doas.conf
