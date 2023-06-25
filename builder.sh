@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
-# sudo -> doas + doas-sudo-shim
 rm /etc/dnf/protected.d/sudo.conf
 rpm-ostree override remove \
   sudo \
@@ -9,13 +8,11 @@ rpm-ostree override remove \
   
 rpm-ostree install -y \
   opendoas
-
 touch /etc/dnf/protected.d/doas.conf
 printf 'opendoas\n' | tee /etc/dnf/protected.d/doas.conf
 chmod 644 /etc/doas.conf
 chown root:root /etc/doas.conf
 
-# install packages
 rpm-ostree install -y \
   podman-docker \
   dash \
@@ -59,7 +56,6 @@ rpm-ostree install -y \
   fido2-tools \
   unrar
 
-# install hyprland
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
@@ -68,17 +64,8 @@ rpm-ostree install -y \
   hyprland-plugins \
   hyprland-autoname-workspaces \
   hyprland
-  
-#wget -O /tmp/eos-flatpak-keyring.gpg https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
 
-flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
-flatpak remote-add --if-not-exists fedora-testing oci+https://registry.fedoraproject.org#testing
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak remote-add --if-not-exists kdeapps-nightly --from https://distribute.kde.org/kdeapps.flatpakrepo
-flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
-flatpak remote-add --if-not-exists elemenetoryos-appcenter https://flatpak.elementary.io/repo.flatpakrepo
-
+touch /etc/profile.d/hyprgreenProfile.sh
 printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
 printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
 printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
