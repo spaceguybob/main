@@ -1,15 +1,24 @@
 #!/usr/bin/env bash
 set -ouex pipefail
 
+chmod +x /usr/share/hyprgreen/just/hyprgreen-just.sh
+chmod +x /usr/share/hyprgreen/vars/hyprgreen-vars.sh
+
+ln -s /usr/share/hyprgreen/just/hyprgreen-just.sh /etc/profile.d/hyprgreen-just.sh
+ln -s /usr/share/hyprgreen/vars/hyprgreen-vars.sh /etc/profile.d/hyprgreen-vars.sh
+ln -s /usr/share/hyprgreen/yum.repos.d/copr-solopasha-hyprland.repo /etc/yum.repos.d/copr-solopasha-hyprland.repo
+
 rm /etc/dnf/protected.d/sudo.conf
+
 rpm-ostree override remove \
   sudo \
   sudo-python-plugin
   
 rpm-ostree install -y \
   opendoas
-touch /etc/dnf/protected.d/doas.conf
-printf 'opendoas\n' | tee /etc/dnf/protected.d/doas.conf
+
+ln -s /usr/share/hyprgreen/dnf/protected.d/doas.conf /etc/dnf/protected.d/doas.conf 
+
 chmod 644 /etc/doas.conf
 chown root:root /etc/doas.conf
 
@@ -64,13 +73,3 @@ rpm-ostree install -y \
   hyprland-plugins \
   hyprland-autoname-workspaces \
   hyprland
-
-touch /etc/profile.d/hyprgreenProfile.sh
-printf 'export SDL_VIDEODRIVER=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export _JAVA_AWT_WM_NONREPARENTING=1\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export QT_QPA_PLATFORM=wayland\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export XDG_CURRENT_DESKTOP=sway\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export XDG_SESSION_DESKTOP=sway\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export GDK_BACKEND="wayland,x11"\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export MOZ_ENABLE_WAYLAND=1\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
-printf 'export QT_QPA_PLATFORMTHEME=qt5ct\n' | tee -a /etc/profile.d/hyprgreenProfile.sh
