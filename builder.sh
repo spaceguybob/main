@@ -46,6 +46,7 @@ rpm-ostree install -y \
   wtype \
   wlogout \
   wlr-randr \
+  wev \
   wlsunset \
   xorg-x11-server-Xwayland \
   gamescope \
