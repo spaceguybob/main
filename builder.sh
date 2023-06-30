@@ -27,19 +27,19 @@ rpm-ostree install -y \
   dash \
   cronie \
   polkit-gnome \
-  alacritty \
+  kitty \
   grimshot \
   mako \
   slurp \
   wofi \
-  sddm \
+  tuigreet \
   qt5ct \
-  thunar \
-  eom \
+  dolphin \
+  imv \
   mpv  \
-  youtube-dl \
+  yt-dlp \
   ffmpeg \
-  mpd \
+  audiotube \
   swaybg \
   swaylock \
   swayidle \
@@ -59,7 +59,6 @@ rpm-ostree install -y \
   pipewire-jack-audio-connection-kit \
   pipewire-plugin-libcamera \
   just \
-  stow \
   git \
   pam-u2f \
   pamu2fcfg \
