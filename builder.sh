@@ -64,8 +64,21 @@ rpm-ostree install -y \
   pam-u2f \
   pamu2fcfg \
   fido2-tools \
-  unrar
-
+  unrar \
+  NetworkManager-adsl \
+  NetworkManager-bluetooth \
+  NetworkManager-iodine-gnome \
+  NetworkManager-l2tp-gnome \
+  NetworkManager-libreswan-gnome \
+  NetworkManager-openconnect-gnome \
+  NetworkManager-openvpn-gnome \
+  NetworkManager-ppp \
+  NetworkManager-pptp-gnome \
+  NetworkManager-vpnc-gnome \
+  NetworkManager-wifi \
+  NetworkManager-wwan \
+  blueman
+  
 rpm-ostree install -y \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
