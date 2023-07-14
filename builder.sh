@@ -75,7 +75,7 @@ rpm-ostree install -y \
   hyprpaper \
   hyprland-plugins \
   hyprland-autoname-workspaces \
-  xorg-x11-server-Xwayland \
+  #xorg-x11-server-Xwayland \
   swaybg \
   swaylock \
   swayidle \
