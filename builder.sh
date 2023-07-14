@@ -40,18 +40,6 @@ rpm-ostree install -y \
   youtube-dl \
   ffmpeg \
   mpd \
-  swaybg \
-  swaylock \
-  swayidle \
-  wtype \
-  wlogout \
-  wlr-randr \
-  wev \
-  wlsunset \
-  xorg-x11-server-Xwayland \
-  gamescope \
-  clipman \
-  qt5-qtwayland \
   wireplumber \
   pipewire-gstreamer \
   pipewire-pulseaudio \
@@ -80,10 +68,22 @@ rpm-ostree install -y \
   blueman
   
 rpm-ostree install -y \
+  hyprland \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
   hyprpicker \
   hyprpaper \
   hyprland-plugins \
   hyprland-autoname-workspaces \
-  hyprland
+  xorg-x11-server-Xwayland \
+  swaybg \
+  swaylock \
+  swayidle \
+  wtype \
+  wlogout \
+  wlr-randr \
+  wev \
+  wlsunset \
+  gamescope \
+  clipman \
+  qt5-qtwayland
