@@ -68,6 +68,7 @@ rpm-ostree install -y \
   blueman \
   hyprland \
   xdg-desktop-portal-hyprland \
+  xorg-x11-server-Xwayland \
   waybar-hyprland \
   hyprpicker \
   hyprpaper \
