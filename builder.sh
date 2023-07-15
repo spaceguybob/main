@@ -65,9 +65,7 @@ rpm-ostree install -y \
   NetworkManager-vpnc-gnome \
   NetworkManager-wifi \
   NetworkManager-wwan \
-  blueman
-  
-rpm-ostree install -y \
+  blueman \
   hyprland \
   xdg-desktop-portal-hyprland \
   waybar-hyprland \
@@ -75,7 +73,6 @@ rpm-ostree install -y \
   hyprpaper \
   hyprland-plugins \
   hyprland-autoname-workspaces \
-  #xorg-x11-server-Xwayland \
   swaybg \
   swaylock \
   swayidle \
@@ -84,6 +81,6 @@ rpm-ostree install -y \
   wlr-randr \
   wev \
   wlsunset \
-  gamescope \
   clipman \
-  qt5-qtwayland
+  qt5-qtwayland \
+  gamescope 
