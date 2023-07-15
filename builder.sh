@@ -82,5 +82,7 @@ rpm-ostree install -y \
   wev \
   wlsunset \
   clipman \
-  qt5-qtwayland \
+  qt5-qtwayland
+
+rpm-ostree install -y \
   gamescope 
