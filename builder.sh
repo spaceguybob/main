@@ -22,7 +22,7 @@ ln -s /usr/share/hyprgreen/dnf/protected.d/doas.conf /etc/dnf/protected.d/doas.c
 chmod 644 /etc/doas.conf
 chown root:root /etc/doas.conf
 
-rpm-ostree override remove -y \
+rpm-ostree override remove \
  xorg-x11-server-Xwayland
 
 rpm-ostree install -y \
