@@ -12,7 +12,8 @@ rm /etc/dnf/protected.d/sudo.conf
 
 rpm-ostree override remove \
   sudo \
-  sudo-python-plugin
+  sudo-python-plugin \
+  xorg-x11-server-Xwayland
   
 rpm-ostree install -y \
   opendoas
@@ -21,9 +22,6 @@ ln -s /usr/share/hyprgreen/dnf/protected.d/doas.conf /etc/dnf/protected.d/doas.c
 
 chmod 644 /etc/doas.conf
 chown root:root /etc/doas.conf
-
-rpm-ostree override remove \
- xorg-x11-server-Xwayland
 
 rpm-ostree install -y \
   podman-docker \
@@ -87,7 +85,5 @@ rpm-ostree install -y \
   wev \
   wlsunset \
   clipman \
-  qt5-qtwayland
-
-rpm-ostree install -y \
+  qt5-qtwayland \
   gamescope 
