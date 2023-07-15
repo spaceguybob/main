@@ -40,7 +40,8 @@ rpm-ostree install -y \
   thunar \
   eom \
   mpv  \
-  youtube-dl \xorg-x11-server-Xwayland
+  youtube-dl \
+  xorg-x11-server-Xwayland \
   ffmpeg \
   mpd \
   wireplumber \
