@@ -22,6 +22,9 @@ ln -s /usr/share/hyprgreen/dnf/protected.d/doas.conf /etc/dnf/protected.d/doas.c
 chmod 644 /etc/doas.conf
 chown root:root /etc/doas.conf
 
+rpm-ostree override remove -y \
+ xorg-x11-server-Xwayland
+
 rpm-ostree install -y \
   podman-docker \
   dash \
@@ -37,7 +40,7 @@ rpm-ostree install -y \
   thunar \
   eom \
   mpv  \
-  youtube-dl \
+  youtube-dl \xorg-x11-server-Xwayland
   ffmpeg \
   mpd \
   wireplumber \
