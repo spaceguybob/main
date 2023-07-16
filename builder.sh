@@ -8,6 +8,9 @@ ln -s /usr/share/hyprgreen/just/hyprgreen-just.sh /etc/profile.d/hyprgreen-just.
 ln -s /usr/share/hyprgreen/vars/hyprgreen-vars.sh /etc/profile.d/hyprgreen-vars.sh
 ln -s /usr/share/hyprgreen/yum.repos.d/copr-solopasha-hyprland.repo /etc/yum.repos.d/copr-solopasha-hyprland.repo
 
+chmod +x /etc/profile.d/hyprgreen-just.sh
+chmod +x /etc/profile.d/hyprgreen-vars.sh
+
 rm /etc/dnf/protected.d/sudo.conf
 
 rpm-ostree override remove \
@@ -39,7 +42,6 @@ rpm-ostree install -y \
   eom \
   mpv  \
   youtube-dl \
-  xorg-x11-server-Xwayland \
   ffmpeg \
   mpd \
   wireplumber \

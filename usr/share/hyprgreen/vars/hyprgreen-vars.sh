@@ -6,3 +6,5 @@ export XDG_SESSION_DESKTOP=sway
 export GDK_BACKEND="wayland,x11"
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORMTHEME=qt5ct
+export ELM_DISPLAY=wl
+export SDL_AUDIODRIVER=pipewire
