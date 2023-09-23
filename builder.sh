@@ -73,7 +73,7 @@ rpm-ostree install -y \
   hyprland \
   xdg-desktop-portal-hyprland \
   xorg-x11-server-Xwayland \
-  waybar-hyprland \
+  waybar \
   hyprpicker \
   hyprpaper \
   hyprland-plugins \
